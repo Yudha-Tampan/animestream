@@ -1,0 +1,34 @@
+{
+  "site": "MiruNime",
+  "tagline": "Tim di balik layanan streaming anime favorit kalian 🌊",
+  "team": [
+    {
+      "role": "Owner",
+      "name": "Luna",
+      "handle": "@luna",
+      "wa": "6288293669411",
+      "avatar": "👑"
+    },
+    {
+      "role": "Partner Owner",
+      "name": "Sky",
+      "handle": "@sky",
+      "wa": "60183255823",
+      "avatar": "🤝"
+    },
+    {
+      "role": "Tim Editor",
+      "name": "chiaa",
+      "handle": "@chiaa",
+      "wa": "6287811961690",
+      "avatar": "✏️"
+    },
+    {
+      "role": "Tim Developer",
+      "name": "Dravin",
+      "handle": "@Dravin",
+      "wa": "6283122563863",
+      "avatar": "💻"
+    }
+  ]
+}

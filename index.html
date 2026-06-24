@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MiruNime — Streaming Anime Sub Indo</title>
+<meta name="description" content="Nonton anime dan movie sub indo terbaru, lengkap, dan gratis di MiruNime.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner container">
+    <a href="#/home" class="brand" data-link>
+      <span class="brand-mark">🌊</span>
+      <span class="brand-text">Miru<span class="accent">Nime</span></span>
+    </a>
+
+    <div class="search-wrap" id="searchWrap">
+      <input type="text" id="searchInput" class="search-input" placeholder="Cari judul anime..." autocomplete="off">
+      <button class="search-clear" id="searchClear" aria-label="Hapus pencarian">✕</button>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <nav class="main-nav">
+      <a href="#/home" data-link class="nav-link" data-route="home">Home</a>
+      <a href="#/movies" data-link class="nav-link" data-route="movies">Movie</a>
+      <a href="#/genres" data-link class="nav-link" data-route="genres">Genre</a>
+      <a href="#/bookmarks" data-link class="nav-link" data-route="bookmarks">Bookmark</a>
+      <a href="#/history" data-link class="nav-link" data-route="history">Riwayat</a>
+      <button class="nav-link contact-nav-btn" id="contactNavBtn" style="background:none;border:none;cursor:pointer;font:inherit;">Kontak</button>
+    </nav>
+
+    <div class="header-actions">
+      <button id="mobileSearchBtn" class="icon-btn" aria-label="Cari">🔍</button>
+      <button id="themeToggle" class="icon-btn" aria-label="Ganti tema">🌙</button>
+      <button id="mobileMenuBtn" class="icon-btn hamburger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#/home" data-link data-route="home">🏠 Home</a>
+    <a href="#/movies" data-link data-route="movies">🎬 Movie</a>
+    <a href="#/genres" data-link data-route="genres">🏷️ Genre</a>
+    <a href="#/bookmarks" data-link data-route="bookmarks">🔖 Bookmark</a>
+    <a href="#/history" data-link data-route="history">🕒 Riwayat</a>
+    <a href="nhentai.html" style="color:var(--accent);font-weight:700">🔞 nHentai</a>
+    <a href="#" id="contactMobileBtn">📞 Kontak</a>
+  </div>
+</header>
+
+<!-- ===================== MAIN APP ===================== -->
+<main id="app" class="container"></main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">🌊 Miru<span class="accent">Nime</span></div>
+    <p>Dibuat untuk pecinta anime. Semua konten bersumber dari penyedia pihak ketiga.</p>
+    <p class="footer-copy">© <span id="year"></span> MiruNime. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Toast container -->
+<div id="toastContainer" class="toast-container"></div>
+
+<!-- ===================== CONTACT MODAL ===================== -->
+<div class="contact-modal-overlay" id="contactModalOverlay">
+  <div class="contact-modal" id="contactModal">
+    <div class="contact-modal-header">
+      <div>
+        <div class="contact-modal-title">🌊 Tim MiruNime</div>
+        <div class="contact-modal-subtitle" id="contactSubtitle">Tim di balik layanan streaming anime favorit kalian</div>
+      </div>
+      <button class="contact-modal-close" id="contactModalClose" aria-label="Tutup">✕</button>
+    </div>
+    <div class="contact-cards" id="contactCards">
+      <!-- injected by JS -->
+    </div>
+  </div>
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/components.js"></script>
+<script src="js/router.js"></script>
+<script src="js/pages.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
